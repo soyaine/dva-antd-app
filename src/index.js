@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 
 // 1. Initialize
 const app = dva();
+
 //const app = dva({
 //  initialState: {
 //    products: [
@@ -13,13 +14,12 @@ const app = dva();
 //  },
 //});
 
-app.model(require('./models/products'));
 
 // 2. Plugins
 // app.use({});
 
 // 3. Model
-// app.model(require('./models/example'));
+ app.model(require('./models/example'));
 
 // 4. Router
 app.router(require('./router'));

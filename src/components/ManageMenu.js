@@ -4,15 +4,6 @@ import { Router, Route, Link } from 'react-router';
 import { Table, Popconfirm, Button, Menu, Icon, Breadcrumb, Layout } from 'antd';
 const { SubMenu } = Menu;
 
-//class ManageMenu extends Component {
-//	
-//}
-
-//class ManageMenu extends Component {
-//  constructor(props){
-//    super(props)
-//  }	
-//}
 const ManageMenu = React.createClass({	
   getInitialState() {
 	// 利用 Menu 中 key 值的层级关系来获取当前展开的 SubMenu 的 key 值
