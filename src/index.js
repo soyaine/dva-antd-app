@@ -3,15 +3,15 @@ import './index.css';
 import 'antd/dist/antd.css';
 
 // 1. Initialize
-//const app = dva();
-const app = dva({
-  initialState: {
-    products: [
-      { name: 'dva', id: 1 },
-      { name: 'antd', id: 2 },
-    ],
-  },
-});
+const app = dva();
+//const app = dva({
+//  initialState: {
+//    products: [
+//      { name: 'dva', id: 1 },
+//      { name: 'antd', id: 2 },
+//    ],
+//  },
+//});
 
 app.model(require('./models/products'));
 

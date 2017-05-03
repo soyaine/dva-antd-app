@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Router, Route } from 'dva/router';
 import IndexPage from './routes/IndexPage';
-//import Manage from './routes/Manage';
-import Products from './routes/Products';
 
 function RouterConfig({ history }) {
   return (
@@ -17,7 +15,6 @@ function RouterConfig({ history }) {
         <Route path="23" component={require('./routes/contents/2-3.js')} />
         <Route path="31" component={require('./routes/contents/3-1.js')} />
 	  </Route>
-	  <Route path="/products" component={Products} />
     </Router>
   );
 }
